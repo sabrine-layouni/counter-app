@@ -1,27 +1,54 @@
-# Counter
+# Angular Counter App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+![Screenshot](https://i.ibb.co/sVG2tGS/counter-app.png)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This Angular application showcases the implementation of a counter with additional features using Angular components, services, and routing.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Increment and decrement the counter.
+- Double the increment/decrement step every 30 actions.
+- Reset the counter to 0 after validating the user's age.
+- Keep the counter value if we change or refresh the page.
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **AppComponent**: The root component that integrates the CounterService and manages the application layout.
+- **UpComponent**: Represents the "Up" page, allowing the user to increment the counter.
+- **DownComponent**: Represents the "Down" page, allowing the user to decrement the counter.
+- **ResetComponent**: Represents the "Reset" page, allowing the user to reset the counter after validating their age.
+- **CounterService**: A service responsible for managing the counter state, providing methods to increment, decrement, reset, and observing changes.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+- Node.js and npm: Make sure you have Node.js and npm installed on your machine.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Installation
 
-## Further help
+1. **Clone the repository:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    git clone https://github.com/sabrine-layouni/counter-app.git
+    ```
+
+2. **Navigate to the project folder:**
+
+    ```bash
+    cd counter-app
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+Run the development server:
+
+```bash
+ng serve
