@@ -1,0 +1,10 @@
+<h3>Enter your birth date:</h3>
+<div class="flex-50 d-flex flex-row">
+  <input type="date" id="birthdate" [(ngModel)]="birthdate" />
+  <button class="btn btn-primary reset" (click)="validateBirthdate()">
+    <i class="bi bi-x"></i> reset</button
+  ><br />
+  <span *ngIf="reset" class="valid toast"
+    ><i class="bi bi-check2"></i> 18+</span
+  >
+</div>
